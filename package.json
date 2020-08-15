@@ -1,0 +1,66 @@
+{
+  "name": "react-forms",
+  "version": "0.0.1",
+  "description": "React forms",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Dillan J Wilding",
+    "email": "dillanjwilding@gmail.com"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/standard",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "dev": "webpack --watch",
+    "demo": "webpack-dev-server --config ./demo/webpack.config.js --watch",
+    "build": "webpack"
+  },
+  "peerDependencies": {
+    "bootstrap": "^4.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^4.2.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "enzyme-to-json": "^3.5.0",
+    "file-loader": "^6.0.0",
+    "jest": "^26.4.0",
+    "jest-css-modules-transform": "^4.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "regenerator-runtime": "^0.13.7",
+    "sass-loader": "^9.0.3",
+    "standard": "^14.3.4",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "standard": {
+    "ignore": [
+      "lib/*"
+    ],
+    "react": {
+      "version": "detect"
+    }
+  }
+}

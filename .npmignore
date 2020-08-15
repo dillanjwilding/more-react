@@ -1,0 +1,8 @@
+.git*
+config
+coverage
+demo
+src
+babel.config.js
+jest.config.js
+webpack.config.js
