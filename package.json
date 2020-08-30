@@ -1,7 +1,7 @@
 {
   "name": "more-react",
   "version": "0.0.1",
-  "description": "More React is a set of common customizable React Components to help developers stop reinventing the wheel",
+  "description": "An abstract, customizable React Component library",
   "main": "lib/index.js",
   "author": {
     "name": "Dillan J Wilding",
