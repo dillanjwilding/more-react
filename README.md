@@ -1,2 +1,2 @@
-# React Forms
-React Forms is an abstract, customizable React forms library.
+# More React
+More React is an abstract, customizable React Component library.
