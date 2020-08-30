@@ -1,12 +1,20 @@
 {
-  "name": "react-forms",
+  "name": "more-react",
   "version": "0.0.1",
-  "description": "React forms",
+  "description": "More React is a set of common customizable React Components to help developers stop reinventing the wheel",
   "main": "lib/index.js",
   "author": {
     "name": "Dillan J Wilding",
     "email": "dillanjwilding@gmail.com"
   },
+  "keywords": [
+    "React",
+    "Components",
+    "Alerts",
+    "Forms",
+    "Form Builder",
+    "Layouts"
+  ],
   "scripts": {
     "lint": "./node_modules/.bin/standard",
     "test": "jest",

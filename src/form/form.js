@@ -1,5 +1,6 @@
 import React, { Children, cloneElement, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+// import Alert from '../alert/index.js'
 
 // @todo: Track down extra renders and remove them
 // @todo: Add layout and formatting
@@ -7,10 +8,16 @@ import PropTypes from 'prop-types'
 // @todo: Add validation
 // @todo: I shouldn't need to rely on displayName. There should be another way to reflexively get a component's name
 // @todo: Export default Form
-export const Form = ({ children, onChange, onSubmit, preventDefault = true, ...props }) => {
+export const Form = ({ children, onLoad, onChange, onSubmit, preventDefault = true, ...props }) => {
   // const [loading, setLoading] = useState(true)
   const [step, setStep] = useState(0)
   const [values, setValues] = useState({})
+  /* const [alerts, setAlerts] = useState({
+    success: [],
+    warning: [],
+    error: []
+  }) */
+
   useEffect(() => {
     // setLoading(false)
   }, [])
@@ -25,6 +32,7 @@ export const Form = ({ children, onChange, onSubmit, preventDefault = true, ...p
   const steps = Children.toArray(children).filter(child => child.type.displayName === 'Step').length
   return (
     <form {...props} onSubmit={handleSubmit}>
+      {/* alerts.success.length && alerts.success.map(alert => <Alert /> ) */}
       {Children.map(children, (child, index) => {
         let childProps = {
           key: index, // not the best practice

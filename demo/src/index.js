@@ -1,9 +1,7 @@
 import React from 'react' // npm link ../node_modules/react
 import { render } from 'react-dom'
 import { Form, Step, Field, Password, Area, Dropdown, Option, Submit, Builder } from 'react-forms' // This requires link
-// import { Form } from '../../lib/index.js'
 // import Form from 'react-forms' // This requires link
-// import Form from '../../lib/index.js'
 
 const App = () => (
   <>
@@ -33,6 +31,7 @@ const App = () => (
         </div>
       </div>
     </div>
+
     <Builder>
       <Field />
       <Submit />
