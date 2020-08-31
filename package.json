@@ -1,6 +1,6 @@
 {
   "name": "more-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An abstract, customizable React Component library",
   "main": "lib/index.js",
   "author": {
