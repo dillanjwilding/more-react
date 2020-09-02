@@ -1,14 +1,14 @@
 import React from 'react'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
-// import PrivateRoute from './privateRoute.js'
+import PrivateRoute from './privateRoute.js'
 import PublicRoute from './publicRoute.js'
-import NotFound from './notFound.js'
 
-export default (
-  <Switch>
-
-    <PublicRoute path='/404-not-found' component={NotFound} />
-    <Route component={() => <Redirect to='/404-not-found' />} />
-  </Switch>
+export default ({ routes, notFoundRoute = '/not-found' }) => (
+  <Router>
+    <Switch>
+      {routes.map(route => route.private ? <PrivateRoute {...route} /> : <PublicRoute {...route} />)}
+      <Route component={() => <Redirect to={notFoundRoute} />} />
+    </Switch>
+  </Router>
 )
